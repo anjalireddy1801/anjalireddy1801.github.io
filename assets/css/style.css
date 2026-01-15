@@ -1,42 +1,94 @@
-/* Reset basic browser spacing */
+/* Base styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #222;
+  background-color: #F8FAFC; /* light neutral background */
+  color: #0F172A; /* dark slate text */
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
   display: flex;
-  justify-content: flex-end;   /* pushes links to the right */
+  justify-content: flex-end;
   padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #E2E8F0; /* subtle divider */
 }
 
-/* Navigation links */
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #222;
+  color: #0F172A;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-/* Main content area */
+nav a:hover {
+  color: #2563EB; /* calm professional blue accent */
+}
+
+/* Main content */
 main {
   max-width: 700px;
-  margin: 80px auto;          /* centers content horizontally */
+  margin: 140px auto;
   padding: 0 20px;
-  line-height: 1.6;           /* improves readability */
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* Headings */
 h1 {
-  font-size: 28px;
-  margin-bottom: 16px;
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #0F172A;
 }
 
-p {
-  font-size: 16px;
+.subtitle {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 30px;
 }
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn.primary {
+  background-color: #2563EB; /* calm professional blue */
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #1D4ED8;
+}
+
+.btn.secondary {
+  border: 1px solid #2563EB;
+  color: #2563EB;
+  background: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #2563EB;
+  color: #fff;
+}
+
+/* Credibility strip */
+.credibility {
+  border-top: 1px solid #E2E8F0;
+  padding-top: 30px;
+  text-align: center;
+  color: #64748B;
+  font-size: 14px;
+}
+
